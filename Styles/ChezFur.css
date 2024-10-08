@@ -15,7 +15,7 @@ a {
 }
 
 header {
-    background-image: url('../Images/LogoSmall.png');  /* Background image for the header on small screens */
+    background-image: url('/Images/LogoSmall.png');  /* Background image for the header on small screens */
     min-height: 50px;  /* Minimum height for the header */
     background-position: right top;  /* Position the image in the top right */
     background-repeat: no-repeat;  /* Ensures the background image does not repeat */
@@ -29,7 +29,6 @@ header {
         font-family: Arial, sans-serif;  /* Font style for larger screens */
     }
 } /* Closing bracket added here */
-
 
 
 
