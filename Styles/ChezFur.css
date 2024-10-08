@@ -1,50 +1,40 @@
-/* This styles the body of the webpage */
+/* Global styles for the website */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: peru;  /* Background color for small screens */
+    color: bisque;           /* Text color for the body */
+    font-family: Arial, sans-serif;  /* Font style for the body text */
 }
 
-/* This styles the header section */
+main { 
+    background-color: saddlebrown;  /* Background color for the main content area */
+    color: gainsboro;  /* Text color for the main section */
+}
+
+a {
+    text-decoration: none;  /* Removes the underline from links */
+}
+
 header {
-    background-color: #f8f8f8;
-    padding: 20px;
-    text-align: center;
+    background-image: url('../Images/LogoSmall.png');  /* Background image for the header on small screens */
+    min-height: 50px;  /* Minimum height for the header */
+    background-position: right top;  /* Position the image in the top right */
+    background-repeat: no-repeat;  /* Ensures the background image does not repeat */
 }
 
-/* This styles the navigation links */
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-}
+/* Styles for larger screens */
+@media (min-width: 750px) {
+    body {
+        background-color: maroon;  /* Background color for larger screens */
+        color: moccasin;           /* Text color for larger screens */
+        font-family: Arial, sans-serif;  /* Font style for larger screens */
+    }
+} /* Closing bracket added here */
 
-/* This styles the navigation links when hovered over */
-nav a:hover {
-    text-decoration: underline;
-}
 
-/* This styles the main content section */
-main {
-    padding: 20px;
-}
 
-/* This styles the footer section */
-footer {
-    background-color: #f8f8f8;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
 
-/* This hides the tab content by default */
-.tabcontent {
-    display: none;
-}
 
-/* This styles the active tab link */
-.tablinks.active {
-    background-color: #ccc;
-}
+
+
+
+
