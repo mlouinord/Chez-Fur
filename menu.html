@@ -4,60 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chez Fur - Menu</title>
-    <link rel="stylesheet" href="Styles/ChezFur.css">
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="ChezFur.css">
 </head>
 <body>
-    <header><!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
-            <title>Chez Fur - Menu</title> <!-- Title for the menu page -->
-            <link rel="stylesheet" href="Styles/ChezFur.css"> <!-- Links to the CSS stylesheet -->
-        </head>
-        <body>
-            <header>
-                <h1>Chez Fur</h1> <!-- Main title of the site -->
-                <h3>by Suzy Schaffer</h3> <!-- Author credit -->
-            </header>
-            
-            <nav> <!-- Navigation links -->
-                <a href="index.html">Homepage</a>
-                <a href="your-host.html">Our Hosts</a>
-                <a href="menu.html">Menu</a>
-                <a href="contacts.html">Contact</a>
-            </nav>
-            
-            <main>
-                <h2>Our Menu</h2> <!-- Subheading for the menu section -->
-                <ul> <!-- Start of an unordered list for menu items -->
-                    <li>Cat-Fe Latte - A rich espresso with a creamy twist.</li> <!-- Item description -->
-                    <li>Fancy Feast Platter - A premium meal for our furry hosts.</li>
-                    <li>Kitty Treats - A selection of feline-friendly snacks.</li>
-                    <li>Cheshire Tea - Herbal blends brewed to perfection.</li>
-                </ul> <!-- End of the unordered list -->
-                <img src="Images/MenuImage.jpg" alt="Menu Image"> <!-- Image representing the menu with alt text -->
-            </main>
-            
-            <footer>
-                <p>Copyright &copy; 2024 Suzy Schaffer<br>
-                <a href="mailto:mayco@louinord.com">Email Us</a></p> <!-- Footer with email link -->
-            </footer>
-        </body>
-        </html>
-        <h2>Our Menu</h2> <!-- Title for the menu section -->
-        <ul> <!-- Start of an unordered list -->
-            <li>Cat-Fe Latte - A rich espresso with a creamy twist.</li> <!-- Menu item -->
-            <li>Fancy Feast Platter - A premium meal for our furry hosts.</li>
-            <li>Kitty Treats - A selection of feline-friendly snacks.</li>
-            <li>Cheshire Tea - Herbal blends brewed to perfection.</li>
-        </ul> <!-- End of the list -->
-        <img src="Images/MenuImage.jpg" alt="Menu Image"> <!-- Menu image -->
+    <!-- Header section with site title -->
+    <header id="site-header">
+        Chez Fur by Suzy Schaffer
+    </header>
+    <!-- Navigation links to other pages -->
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="your-host.html">Our Hosts</a>
+        <a href="menu.html">Menu</a>
+        <a href="contacts.html">Contact</a>
+    </nav>
+    <!-- Main content area -->
+    <main>
+        <!-- Aside section with additional information -->
+        <aside>
+            Enjoy our food while you visit with our friendly hosts! We have selections for appetites big and small.
+        </aside>
+        <!-- Section for menu items -->
+        <section class="menu-section">
+            <h1 class="menu-heading">Menu</h1>
+            <dl>
+                <dt>Cat-Fe Latte</dt>
+                <dd>A rich espresso with a creamy twist. $5</dd>
+                <dt>Fancy Feast Platter</dt>
+                <dd>A premium meal for our furry hosts. $15</dd>
+                <dt>Kitty Treats</dt>
+                <dd>A selection of feline-friendly snacks. $3</dd>
+                <dt>Cheshire Tea</dt>
+                <dd>Herbal blends brewed to perfection. $4</dd>
+            </dl>
+            <!-- Allergy information -->
+            <div class="allergy-info">
+                Please let the staff know of any food sensitivities before you order.
+            </div>
+        </section>
     </main>
-    
+    <!-- Footer section with copyright and contact link -->
     <footer>
-        <p>Copyright &copy; 2024 Suzy Schaffer<br>
-        <a href="mailto:mayco@louinord.com">Email Us</a></p>
+        <p>Copyright © 2024 Suzy Schaffer</p>
+        <p><a href="mailto:mayco@louinord.com">Email Us</a></p>
     </footer>
 </body>
 </html>
