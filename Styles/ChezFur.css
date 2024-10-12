@@ -53,3 +53,79 @@ img {
 aside {
   background-color: #DEB887; /* BurlyWood */
   color: #000000; /* Black */
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the menu heading */
+.menu-heading {
+  font-family: 'Brush Script MT', cursive;
+  text-align: center;
+  font-size: 2em;
+}
+
+/* Styles for the allergy information */
+.allergy-info {
+  font-weight: bold;
+  color: #FF4500; /* OrangeRed */
+}
+
+/* Styles for the menu section */
+.menu-section {
+  background-color: #FFF8DC; /* Cornsilk */
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Styles for the cat images */
+.cat-images {
+  background-color: #FFFACD; /* LemonChiffon */
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.cat-images img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+@media (min-width: 750px) {
+  .cat-images img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Pseudo-classes for navigation links */
+nav a:link {
+  color: #0000FF; /* Blue */
+}
+
+nav a:visited {
+  color: #800080; /* Purple */
+}
+
+nav a:hover {
+  color: #FF0000; /* Red */
+  font-size: 1.1em;
+}
+
+nav a:active {
+  color: #00FF00; /* Lime */
+}
+
+/* Inline styles and IDs */
+#header {
+  font-family: 'Brush Script MT', cursive;
+}
+
+/* Example of inline style */
+span.business-name {
+  font-style: italic;
+}
