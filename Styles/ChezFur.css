@@ -1,131 +1,62 @@
 /* General styles for the entire page */
 body {
-  background-color: #8B4513; /* SaddleBrown */
-  color: #FFE4C4; /* Bisque */
-  font-family: Arial, sans-serif; /* Arial font, fallback to sans-serif */
+  background-color: #FFEBCD; /* Light Background */
+  color: #2F4F4F; /* DarkSlateGray for text */
+  font-family: Arial, sans-serif;
 }
 
-/* Styles for the main content area */
-main {
-  background-color: #A0522D; /* Sienna */
-  color: #DCDCDC; /* Gainsboro */
-}
-
-/* Styles for links */
-a {
-  text-decoration: none; /* Remove underline from links */
-}
-
-/* Styles for the header */
-header {
-  background-image: url('Images/LogoSmall.png'); /* Small logo image */
-  min-height: 50px; /* Minimum height of 50 pixels */
-  background-position: right top; /* Position image at the top right */
-  background-repeat: no-repeat; /* Do not repeat the background image */
-}
-
-/* Media query for larger screens */
-@media (min-width: 750px) {
-  body {
-    background-color: #800000; /* Maroon */
-    color: #FFE4B5; /* Moccasin */
-    font-family: Georgia, sans-serif; /* Georgia font, fallback to sans-serif */
-  }
-  header {
-    background-image: url('Images/LogoLarge.png'); /* Larger logo image */
-    min-height: 100px; /* Minimum height of 100 pixels */
-  }
-}
-
-/* Styles for images */
-img {
-  max-width: 100%; /* Image width should not exceed container width */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Styles for the cat gallery section */
-.cat-gallery {
-  background-color: #f0f0f0; /* Light gray background color */
-  border-radius: 10px; /* Rounded corners */
-}
-
-/* Styles for the aside element */
-aside {
-  background-color: #DEB887; /* BurlyWood */
-  color: #000000; /* Black */
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-/* Styles for the menu heading */
-.menu-heading {
+/* Header Styling with Brush Script MT */
+#header {
   font-family: 'Brush Script MT', cursive;
+  background-color: #8B4513; /* SaddleBrown */
+  color: #FFE4C4;
   text-align: center;
-  font-size: 2em;
+  padding: 20px;
 }
 
-/* Styles for the allergy information */
-.allergy-info {
-  font-weight: bold;
-  color: #FF4500; /* OrangeRed */
+/* Navigation link styles with pseudoclasses */
+nav a:link {
+  color: #0000FF; /* Default Blue */
+}
+nav a:visited {
+  color: #551A8B; /* Purple after click */
+}
+nav a:hover {
+  color: #FF4500; /* Change to OrangeRed when hovered */
+}
+nav a:active {
+  color: #00FF00; /* Lime when clicked */
 }
 
-/* Styles for the menu section */
+/* Styling for images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styling for Menu Section */
 .menu-section {
-  background-color: #FFF8DC; /* Cornsilk */
+  background-color: #FFF8DC;
   width: 80%;
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
 }
 
-/* Styles for the cat images */
-.cat-images {
-  background-color: #FFFACD; /* LemonChiffon */
-  width: 90%;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
+/* Allergy information style */
+.allergy-info {
+  font-size: 1.2em;
+  color: #FF0000; /* Bright Red */
+  font-weight: bold;
 }
 
-.cat-images img {
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-}
-
+/* For media queries and larger screens */
 @media (min-width: 750px) {
-  .cat-images img {
-    width: 180px;
-    height: 180px;
+  body {
+    background-color: #D2B48C; /* Tan */
+    color: #000000;
   }
-}
-
-/* Pseudo-classes for navigation links */
-nav a:link {
-  color: #0000FF; /* Blue */
-}
-
-nav a:visited {
-  color: #800080; /* Purple */
-}
-
-nav a:hover {
-  color: #FF0000; /* Red */
-  font-size: 1.1em;
-}
-
-nav a:active {
-  color: #00FF00; /* Lime */
-}
-
-/* Inline styles and IDs */
-#header {
-  font-family: 'Brush Script MT', cursive;
-}
-
-/* Example of inline style */
-span.business-name {
-  font-style: italic;
+  header {
+    min-height: 100px;
+  }
 }
