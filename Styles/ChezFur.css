@@ -1,109 +1,55 @@
-/* Global styles for the website */
-/* Color palette from Coolors.co */
-/* This section sets the overall look and feel of the website */
+/* General styles for the entire page */
 body {
-    background-color: #2E4057; /* Dark Blue for the background */
-    color: #F5F5F5; /* Light Gray for the text */
-    font-family: Arial, sans-serif; /* Font style for the body text */
+  background-color: #8B4513; /* SaddleBrown */
+  color: #FFE4C4; /* Bisque */
+  font-family: Arial, sans-serif; /* Arial font, fallback to sans-serif */
+}
+
+/* Styles for the main content area */
+main {
+  background-color: #A0522D; /* Sienna */
+  color: #DCDCDC; /* Gainsboro */
+}
+
+/* Styles for links */
+a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Styles for the header */
+header {
+  background-image: url('Images/LogoSmall.png'); /* Small logo image */
+  min-height: 50px; /* Minimum height of 50 pixels */
+  background-position: right top; /* Position image at the top right */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+/* Media query for larger screens */
+@media (min-width: 750px) {
+  body {
+    background-color: #800000; /* Maroon */
+    color: #FFE4B5; /* Moccasin */
+    font-family: Georgia, sans-serif; /* Georgia font, fallback to sans-serif */
   }
-  
-  main {
-    background-color: #1B263B; /* Darker Blue for the main content area */
-    color: #EAEAEA; /* Light Gray for the main section text */
-  }
-  
-  a {
-    text-decoration: none; /* Removes the underline from links */
-    color: #F5F5F5; /* Light Gray for the links */
-  }
-  
   header {
-    background-image: url('/Images/LogoSmall.png'); /* Background image for the header */
-    min-height: 50px; /* Minimum height for the header */
-    background-position: right top; /* Position the image in the top right */
-    background-repeat: no-repeat; /* Ensures the background image does not repeat */
+    background-image: url('Images/LogoLarge.png'); /* Larger logo image */
+    min-height: 100px; /* Minimum height of 100 pixels */
   }
-  
-  /* Styles for larger screens */
-  @media (min-width: 750px) {
-    body {
-      background-color: #1B263B; /* Darker Blue for larger screens */
-      color: #EAEAEA; /* Light Gray for larger screens */
-    }
-  }
-  
-  /* Semantic elements */
-  /* Styles for the aside element */
-  aside {
-    background-color: #4A6FA5; /* Medium Blue for the aside background */
-    color: #FFFFFF; /* White for the aside text */
-    padding: 10px; /* Padding inside the aside element */
-  }
-  
-  /* Styles for the menu heading */
-  h1.menu-heading {
-    font-family: 'Brush Script MT', cursive; /* Cursive font for the menu heading */
-    text-align: center; /* Center the menu heading */
-  }
-  
-  /* Styles for the allergy information */
-  .allergy-info {
-    font-weight: bold; /* Bold font for the allergy information */
-    color: #FF6F61; /* Coral color for the allergy information text */
-  }
-  
-  /* Styles for the menu section */
-  .menu-section {
-    background-color: #F5F5F5; /* Light Gray for the menu section background */
-    width: 80%; /* Width of the menu section */
-    margin: auto; /* Center the menu section */
-    padding: 20px; /* Padding inside the menu section */
-    border-radius: 10px; /* Rounded corners for the menu section */
-  }
-  
-  /* Styles for the hosts section */
-  .hosts-section {
-    background-color: #F5F5F5; /* Light Gray for the hosts section background */
-    width: 90%; /* Width of the hosts section */
-    margin: auto; /* Center the hosts section */
-    padding: 20px; /* Padding inside the hosts section */
-    border-radius: 10px; /* Rounded corners for the hosts section */
-    text-align: center; /* Center the text in the hosts section */
-  }
-  
-  /* Styles for the host images */
-  .hosts-section img {
-    border-radius: 50%; /* Circular images for the hosts */
-    width: 80px; /* Width of the images for small screens */
-    height: 80px; /* Height of the images for small screens */
-  }
-  
-  /* Styles for larger screens */
-  @media (min-width: 750px) {
-    .hosts-section img {
-      width: 180px; /* Width of the images for larger screens */
-      height: 180px; /* Height of the images for larger screens */
-    }
-  }
-  
-  /* Pseudo-classes for navigation links */
-  /* Styles for unvisited links */
-  nav a:link {
-    color: #FFD700; /* Gold color for unvisited links */
-  }
-  
-  /* Styles for visited links */
-  nav a:visited {
-    color: #FF4500; /* Orange Red color for visited links */
-  }
-  
-  /* Styles for hovered links */
-  nav a:hover {
-    color: #32CD32; /* Lime Green color for hovered links */
-    font-size: 1.1em; /* Slightly larger font size for hovered links */
-  }
-  
-  /* Styles for active links */
-  nav a:active {
-    color: #FF0000; /* Red color for active links */
-  }
+}
+
+/* Styles for images */
+img {
+  max-width: 100%; /* Image width should not exceed container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Styles for the cat gallery section */
+.cat-gallery {
+  background-color: #f0f0f0; /* Light gray background color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Styles for the aside element */
+aside {
+  background-color: #DEB887; /* BurlyWood */
+  color: #000000; /* Black */
