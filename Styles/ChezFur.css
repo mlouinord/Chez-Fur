@@ -1,62 +1,42 @@
-/* General styles for the entire page */
+/* Global Styles */
 body {
-  background-color: #FFEBCD; /* Light Background */
-  color: #2F4F4F; /* DarkSlateGray for text */
-  font-family: Arial, sans-serif;
+  background-color: #FFFAF0; /* Floral White for background */
+  color: #2F4F4F; /* Dark Slate Gray for text */
+  font-family: Arial, sans-serif; /* Font for the entire page */
 }
 
-/* Header Styling with Brush Script MT */
+/* Styles for header */
 #header {
-  font-family: 'Brush Script MT', cursive;
-  background-color: #8B4513; /* SaddleBrown */
-  color: #FFE4C4;
+  background-color: #8B0000; /* Dark Red background */
+  color: #FFFFFF; /* White text */
+  font-family: 'Brush Script MT', cursive; /* Fancy cursive font */
   text-align: center;
-  padding: 20px;
+  padding: 10px 0;
 }
 
-/* Navigation link styles with pseudoclasses */
-nav a:link {
-  color: #0000FF; /* Default Blue */
+/* Navigation styles */
+nav a {
+  text-decoration: none;
+  color: #2F4F4F; /* Default link color */
+  padding: 10px;
 }
-nav a:visited {
-  color: #551A8B; /* Purple after click */
-}
+
 nav a:hover {
-  color: #FF4500; /* Change to OrangeRed when hovered */
-}
-nav a:active {
-  color: #00FF00; /* Lime when clicked */
+  color: #FF4500; /* Change color on hover */
+  font-size: 1.1em; /* Make the text slightly larger on hover */
 }
 
-/* Styling for images */
-img {
-  max-width: 100%;
-  height: auto;
+nav a:visited {
+  color: #800080; /* Purple for visited links */
 }
 
-/* Styling for Menu Section */
-.menu-section {
-  background-color: #FFF8DC;
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
+/* Aside styling */
+.contact-aside {
+  background-color: #FFFACD; /* Lemon Chiffon for aside */
+  padding: 15px;
+  margin: 20px 0;
+  font-style: italic;
   border-radius: 10px;
 }
 
-/* Allergy information style */
-.allergy-info {
-  font-size: 1.2em;
-  color: #FF0000; /* Bright Red */
-  font-weight: bold;
-}
-
-/* For media queries and larger screens */
-@media (min-width: 750px) {
-  body {
-    background-color: #D2B48C; /* Tan */
-    color: #000000;
-  }
-  header {
-    min-height: 100px;
-  }
-}
+/* Footer styles */
