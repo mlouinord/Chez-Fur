@@ -1,13 +1,13 @@
 /* Global styles for the website */
 body {
-  background-color: peru;  /* Background color for small screens */
-  color: bisque;           /* Text color for the body */
+  background-color: #f0e68c;  /* New background color for small screens */
+  color: #2f4f4f;           /* New text color for the body */
   font-family: Arial, sans-serif;  /* Font style for the body text */
 }
 
 main { 
-  background-color: saddlebrown;  /* Background color for the main content area */
-  color: gainsboro;  /* Text color for the main section */
+  background-color: #deb887;  /* New background color for the main content area */
+  color: #fffaf0;  /* New text color for the main section */
 }
 
 a {
@@ -24,8 +24,8 @@ header {
 /* Styles for larger screens */
 @media (min-width: 750px) {
   body {
-      background-color: maroon;  /* Background color for larger screens */
-      color: moccasin;           /* Text color for larger screens */
+      background-color: #8b4513;  /* New background color for larger screens */
+      color: #fffaf0;           /* New text color for larger screens */
   }
 
   header {
@@ -38,4 +38,36 @@ header {
 img {
   max-width: 100%;  /* Ensures images resize with the viewport */
   height: auto;  /* Maintains aspect ratio */
+}
+
+/* Menu page styles */
+aside {
+  background-color: #ffebcd;  /* Background color for the aside */
+  color: #8b4513;  /* Text color for the aside */
+}
+
+/* Host images styles */
+.hosts-section {
+  text-align: center;
+  background-color: #f5f5dc;  /* Background color for the hosts section */
+  border-radius: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.host-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+@media (min-width: 750px) {
+  .host-image {
+      width: 180px;
+      height: 180px;
+  }
+}
+
+figcaption {
+  font-weight: bold;
 }
