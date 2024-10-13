@@ -18,22 +18,24 @@
         <h3>by Suzy Schaffer</h3>
     </header>
     
+    <!-- Navigation bar with links to different pages -->
     <nav>
-        <!-- Navigation links to different pages of the website -->
-        <a href="index.html">Homepage</a>
-        <a href="your-host.html">Our Hosts</a>
-        <a href="menu.html">Menu</a>
-        <a href="contacts.html">Contact</a>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="your-host.html">Our Hosts</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
     </nav>
     
     <main>
-        <aside>
+        <aside class="column left">
             <!-- Sidebar content providing additional information -->
             Enjoy our food while you visit with our friendly hosts! We have selections for appetites big and small.
         </aside>
         <!-- Main heading for the menu section -->
-        <h1 class="menu-heading">Menu</h1>
-        <section class="menu-section">
+        <section class="menu-section column right">
+            <h1 class="menu-heading">Menu</h1>
             <!-- Unordered list containing different menu categories -->
             <ul class="menu-list">
                 <li>Nibbles
@@ -61,19 +63,4 @@
                     </dl>
                 </li>
             </ul>
-            <!-- Additional information about food allergies -->
-            <div class="allergy-info">
-                Please let the staff know of any food sensitivities before you order.
-            </div>
-        </section>
-        <!-- Image related to the menu -->
-        <img src="Images/ImageMenu.png" alt="Menu Image">
-    </main>
-    
-    <footer>
-        <!-- Footer content with copyright information and contact email -->
-        <p>Copyright &copy; 2024 Suzy Schaffer<br>
-        <a href="mailto:mayco@louinord.com">Email Us</a></p>
-    </footer>
-</body>
-</html>
+            <!-- Additional information about food-->
