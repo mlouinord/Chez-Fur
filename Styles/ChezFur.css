@@ -44,6 +44,9 @@ img {
 aside {
   background-color: #ffebcd;  /* Background color for the aside */
   color: #8b4513;  /* Text color for the aside */
+  border: 2px solid #ccc;  /* Border for the aside */
+  border-radius: 10px;  /* Rounded corners for the aside */
+  padding: 15px;  /* Padding for the aside */
 }
 
 /* Host images styles */
@@ -84,6 +87,69 @@ nav a:hover {
 
 nav a:visited {
   color: #deb887;  /* Visited link color */
+}
+
+/* Remove bullets from navigation list */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Vertical navigation for large screens */
+@media (min-width: 750px) {
+  nav ul {
+      display: block;
+  }
+  nav ul li {
+      margin-bottom: 10px;
+      background-color: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+  }
+}
+
+/* Horizontal navigation for small screens */
+@media (max-width: 749px) {
+  nav ul {
+      display: flex;
+      justify-content: space-around;
+  }
+  nav ul li {
+      margin: 0 5px;
+      background-color: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+  }
+}
+
+/* Improve text spacing on menu page */
+.menu-section {
+  padding: 20px;
+}
+.menu-list li {
+  margin-bottom: 15px;
+}
+
+/* Two-column layout for large screens */
+@media (min-width: 750px) {
+  .column {
+      float: left;
+      width: 45%;
+      margin: 2.5%;
+  }
+  .left {
+      clear: left;
+  }
+  .right {
+      clear: right;
+  }
+}
+
+/* Clear property for footer */
+footer {
+  clear: both;
+  text-align: center;
+  padding: 10px;
 }
 
 /* Comments on color palette and contrast ratios */
