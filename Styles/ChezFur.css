@@ -99,12 +99,29 @@ nav ul {
 @media (min-width: 750px) {
   nav ul {
       display: block;
+      width: 200px;  /* Fixed width for vertical navigation */
+      position: fixed;  /* Fix position to the side */
+      top: 100px;  /* Position below the header */
+      left: 0;  /* Align to the left */
   }
   nav ul li {
       margin-bottom: 10px;
       background-color: #f0f0f0;
       padding: 10px;
       text-align: center;
+      border-radius: 5px;  /* Rounded corners for navigation items */
+  }
+  nav ul li:nth-child(1) {
+      background-color: #ff9999;  /* Different color for each tab */
+  }
+  nav ul li:nth-child(2) {
+      background-color: #99ccff;
+  }
+  nav ul li:nth-child(3) {
+      background-color: #99ff99;
+  }
+  nav ul li:nth-child(4) {
+      background-color: #ffcc99;
   }
 }
 
@@ -119,6 +136,7 @@ nav ul {
       background-color: #f0f0f0;
       padding: 10px;
       text-align: center;
+      border-radius: 5px;  /* Rounded corners for navigation items */
   }
 }
 
@@ -160,6 +178,7 @@ Color Palette:
 - Text: #2f4f4f, #fffaf0
 - Aside background: #ffebcd
 - Hosts section background: #f5f5dc
+- Navigation tabs: #ff9999, #99ccff, #99ff99, #ffcc99
 
 Contrast Ratios:
 - Text on small screen background: 4.5:1
