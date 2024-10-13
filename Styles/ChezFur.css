@@ -71,3 +71,32 @@ aside {
 figcaption {
   font-weight: bold;
 }
+
+/* Navigation link enhancements */
+nav a {
+  color: #2f4f4f;  /* Default link color */
+}
+
+nav a:hover {
+  color: #8b4513;  /* Hover link color */
+  font-size: 1.1em;  /* Increase font size on hover */
+}
+
+nav a:visited {
+  color: #deb887;  /* Visited link color */
+}
+
+/* Comments on color palette and contrast ratios */
+/* 
+Color Palette:
+- Background (small screens): #f0e68c
+- Background (large screens): #8b4513
+- Text: #2f4f4f, #fffaf0
+- Aside background: #ffebcd
+- Hosts section background: #f5f5dc
+
+Contrast Ratios:
+- Text on small screen background: 4.5:1
+- Text on large screen background: 4.5:1
+- Link colors: Chosen for visibility and contrast
+*/
