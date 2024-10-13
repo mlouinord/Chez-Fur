@@ -8,6 +8,8 @@ body {
 main { 
   background-color: #deb887;  /* New background color for the main content area */
   color: #fffaf0;  /* New text color for the main section */
+  padding: 20px;  /* Add padding to the main content area */
+  margin-left: 220px;  /* Add margin to accommodate the sidebar navigation */
 }
 
 a {
@@ -19,6 +21,8 @@ header {
   min-height: 50px;  /* Minimum height for the header */
   background-position: right top;  /* Position the image in the top right */
   background-repeat: no-repeat;  /* Ensures the background image does not repeat */
+  padding: 10px;  /* Add padding to the header */
+  text-align: center;  /* Center the text in the header */
 }
 
 /* Styles for larger screens */
@@ -47,6 +51,7 @@ aside {
   border: 2px solid #ccc;  /* Border for the aside */
   border-radius: 10px;  /* Rounded corners for the aside */
   padding: 15px;  /* Padding for the aside */
+  margin-left: 220px;  /* Add margin to accommodate the sidebar navigation */
 }
 
 /* Host images styles */
@@ -56,6 +61,7 @@ aside {
   border-radius: 10px;
   width: 90%;
   margin: 0 auto;
+  padding: 20px;  /* Add padding to the hosts section */
 }
 
 .host-image {
@@ -103,6 +109,9 @@ nav ul {
       position: fixed;  /* Fix position to the side */
       top: 100px;  /* Position below the header */
       left: 0;  /* Align to the left */
+      background-color: #333;  /* Background color for the sidebar */
+      padding: 10px;  /* Add padding to the sidebar */
+      border-radius: 10px;  /* Rounded corners for the sidebar */
   }
   nav ul li {
       margin-bottom: 10px;
@@ -130,6 +139,9 @@ nav ul {
   nav ul {
       display: flex;
       justify-content: space-around;
+      background-color: #333;  /* Background color for the horizontal navigation */
+      padding: 10px;  /* Add padding to the horizontal navigation */
+      border-radius: 10px;  /* Rounded corners for the horizontal navigation */
   }
   nav ul li {
       margin: 0 5px;
