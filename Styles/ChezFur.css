@@ -1,42 +1,41 @@
-/* Global Styles */
+/* Global styles for the website */
 body {
-  background-color: #FFFAF0; /* Floral White for background */
-  color: #2F4F4F; /* Dark Slate Gray for text */
-  font-family: Arial, sans-serif; /* Font for the entire page */
+  background-color: peru;  /* Background color for small screens */
+  color: bisque;           /* Text color for the body */
+  font-family: Arial, sans-serif;  /* Font style for the body text */
 }
 
-/* Styles for header */
-#header {
-  background-color: #8B0000; /* Dark Red background */
-  color: #FFFFFF; /* White text */
-  font-family: 'Brush Script MT', cursive; /* Fancy cursive font */
-  text-align: center;
-  padding: 10px 0;
+main { 
+  background-color: saddlebrown;  /* Background color for the main content area */
+  color: gainsboro;  /* Text color for the main section */
 }
 
-/* Navigation styles */
-nav a {
-  text-decoration: none;
-  color: #2F4F4F; /* Default link color */
-  padding: 10px;
+a {
+  text-decoration: none;  /* Removes the underline from links */
 }
 
-nav a:hover {
-  color: #FF4500; /* Change color on hover */
-  font-size: 1.1em; /* Make the text slightly larger on hover */
+header {
+  background-image: url('../Images/LogoSmall.png');  /* Background image for the header on small screens */
+  min-height: 50px;  /* Minimum height for the header */
+  background-position: right top;  /* Position the image in the top right */
+  background-repeat: no-repeat;  /* Ensures the background image does not repeat */
 }
 
-nav a:visited {
-  color: #800080; /* Purple for visited links */
+/* Styles for larger screens */
+@media (min-width: 750px) {
+  body {
+      background-color: maroon;  /* Background color for larger screens */
+      color: moccasin;           /* Text color for larger screens */
+  }
+
+  header {
+      background-image: url('../Images/LogoLarge.png');  /* Background image for the header on large screens */
+      min-height: 100px;  /* Minimum height for the header on large screens */
+  }
 }
 
-/* Aside styling */
-.contact-aside {
-  background-color: #FFFACD; /* Lemon Chiffon for aside */
-  padding: 15px;
-  margin: 20px 0;
-  font-style: italic;
-  border-radius: 10px;
+/* Responsive image styles */
+img {
+  max-width: 100%;  /* Ensures images resize with the viewport */
+  height: auto;  /* Maintains aspect ratio */
 }
-
-/* Footer styles */
